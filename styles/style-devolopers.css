@@ -8,6 +8,11 @@ body {
     font-weight: 400;
     font-style: normal;
     color: #0D0D0D;
+    background-image: url(/images/pikaso_texttoimage_35mm-film-photography-Minimalist-digital-map-visua.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow:auto;
+    
 }
 
 img {
@@ -62,8 +67,9 @@ a:hover{
 
 main{
     height: auto;
-    background-image: url(/images/pikaso_texttoimage_35mm-film-photography-Minimalist-digital-map-visua.jpg);
-    background-size: cover;
+    
+    background-repeat: no-repeat;
+    background-size: contain;
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -92,6 +98,6 @@ h2{
 .about-text{
     font-size: 20px;
     text-align: justify;
-    width: 720px;
+    width: 900px;
 }
 
