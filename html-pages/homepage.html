@@ -1,45 +1,112 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/style-homepage.css">
-    <link rel="shortcut icon" href="/images/icons8-caminhão-16.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="/styles/style-homepage.css" />
+    <link
+      rel="stylesheet"
+      href="/styles/homepage-mobile.css"
+      media="screen and (max-width: 769px)"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
     <title>Truck Route</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="logo">
-            <img class="map" src="/images/project-logo.png" alt="Truck Route logo">
-            <h1 class="name">Truck Route</h1>
-        </div>
-        <nav>
-            <ul>
-                <a href="homepage.html">
-                    <li>Inicio</li>
-                </a>
-                <a href="about.html">
-                    <li>Sobre</li>
-                </a>
-                <a href="technology.html">
-                    <li>Tecnologia</li>
-                </a>
-                <a href="devolopers.html">
-                    <li>Desenvolvedores</li>
-                </a>
-            </ul>
-        </nav>
+      <div class="logo">
+        <img
+          class="map"
+          src="/images/project-logo.png"
+          alt="Truck Route logo"
+        />
+        <h1 class="name">Truck Route</h1>
+      </div>
+
+      <nav id="nav-header">
+        <ul>
+          <a href="homepage.html">
+            <li>Inicio</li>
+          </a>
+          <a href="about.html">
+            <li>Sobre</li>
+          </a>
+          <a href="technology.html">
+            <li>Tecnologia</li>
+          </a>
+          <a href="devolopers.html">
+            <li>Desenvolvedores</li>
+          </a>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <div class="title">
-            <h2 >Otimize suas rotas de entrega com <br>nosso serviço</h2>
+      <div class="title">
+        <h2>Otimize suas rotas de entrega com <br />nosso serviço</h2>
+      </div>
+      <div>
+        <button>
+          <p><a class="start" href="product-page.html">Iniciar Rota</a></p>
+        </button>
+      </div>
+
+      <footer>
+        <div class="navegation">
+          <ul>
+            <li class="list active">
+              <a href="#">
+                <span class="icon">
+                  <i class="fi fi-rr-home"></i>
+                </span>
+                <span class="text">Inicio</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#">
+                <span class="icon">
+                  <i class="fi fi-rr-document"></i>
+                </span>
+                <span class="text">Sobre</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#">
+                <span class="icon">
+                  <i class="fi fi-rr-bulb"></i>
+                </span>
+                <span class="text">Tecnologia</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#">
+                <span class="icon">
+                  <i class="fi fi-rr-users"></i>
+                </span>
+                <span class="text">Desenvolvedores</span>
+              </a>
+            </li>
+            <div class="indicator"></div>
+          </ul>
         </div>
-        <div>
-            <button>
-                <p><a class="start" href="product-page.html">Iniciar Rota</a></p>
-            </button>
-        </div>
+      </footer>
     </main>
-    </body>
+  </body>
+  <script>
+    const list = document.querySelectorAll(".list");
+    function activeLink() {
+      list.forEach((item) => item.classList.remove("active"));
+      this.classList.add("active");
+    }
+    list.forEach((item) => item.addEventListener("click", activeLink));
+  </script>
 </html>

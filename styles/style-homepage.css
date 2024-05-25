@@ -8,6 +8,8 @@ body {
     font-weight: 400;
     font-style: normal;
     color: #0D0D0D;
+    background-image: url(/images/pikaso_texttoimage_35mm-film-photography-Minimalist-digital-map-visua.jpg);
+    background-size: cover;
 }
 
 img {
@@ -28,42 +30,40 @@ header{
     align-items: center;
 }
 
-nav {
+#nav-header {
     display: flex;
     align-items: center;
 }
 
-ul{
+#nav-header > ul{
     display: flex;
     flex-direction: row;
     justify-content: end;
     padding: 20px;
 }
 
-li{
+#nav-header > ul > a > li{
     list-style: none;
     padding: 16px 18px;
     border-radius:10px;
     color: #0D0D0D;
 }
 
-li:hover{
+#nav-header > ul > a > li:hover{
     background-color:#0554F2;
     color: #F2F2F2;
 }
 
-a:link{
+#nav-header > ul > a:link{
     text-decoration: none; 
 }
 
-a:hover{
+#nav-header > ul > a:hover{
     color: #F2F2F2;
 }
 
 main{
     height: auto;
-    background-image: url(/images/pikaso_texttoimage_35mm-film-photography-Minimalist-digital-map-visua.jpg);
-    background-size: cover;
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -84,10 +84,13 @@ button{
     border: 0px;
 }
 
-.start{
+div > button > p > .start{
     margin-top:24px;
     font-family:"Roboto", sans-serif;
     color:#F2F2F2;
     font-size: 1.5em;
 }
 
+footer{
+    display: none;
+}

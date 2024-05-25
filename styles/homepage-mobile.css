@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+:root {
+    --clr: black;
+  }
+
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #0D0D0D;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/images/pikaso_texttoimage_35mm-film-photography-Minimalist-digital-map-visua.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+.logo{
+    display: flex;
+    width: 97vw;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+header {
+    background-color: transparent;
+    margin-top: 8px;
+}
+
+#nav-header{
+    display: none;
+}
+
+main{
+
+
+}
+
+
+
+.title{
+    font-size: 1.8em;
+    margin-top:92px;
+    margin-bottom: 72px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    color: #1e2761;
+    height: 70px;
+}
+
+footer .navegation {
+    position: relative;
+    width: 100vw;
+    height: 70px;
+    background: #0554F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+  }
+  footer .navegation ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+  }
+  footer .navegation ul li {
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+  }
+  footer .navegation ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+  }
+  footer .navegation ul li a .icon {
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: 0.5s;
+    color: var(--clr);
+  }
+  footer .navegation ul li a:hover .icon {
+    transform: translateY(-20px);
+  }
+
+  
+    
+
+
+
