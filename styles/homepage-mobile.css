@@ -148,7 +148,7 @@ footer .navegation {
     left: -20px;
     height: 15px;
     width: 15px;
-    background: #0554f2;
+    background: transparent;
     border-top-right-radius: 25px;
     box-shadow: 6px -3px 0 0 white; 
   }
