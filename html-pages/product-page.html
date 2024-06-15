@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/product-mobile.css">
-    <link rel="stylesheet" href="/styles/product-mobile.css" media="screen and (max-width: 769px)">
-    <link rel="shortcut icon" href="/images/icons8-caminhão-16.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/product-mobile.css" />
+    <link rel="stylesheet" href="/styles/product-mobile.css" media="screen and (max-width: 769px)"/>
+    <link rel="shortcut icon" href="/images/icons8-caminhão-16.png" type="image/x-icon"/>
+    <script type="text/javascript" src="../directions/directions.js"></script>
+    <script type="text/javascript" src="../directions/server.js"></script>
+    <script type="text/javascript" src="../directions/script.js" ></script>
     <title>Truck Route</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="logo">
-            <img class="map" src="/images/project-logo.png" alt="Truck Route logo">
-            <h1 class="name">Truck Route</h1>
-        </div>
-        <nav>
-            <ul>
-                <a href="homepage.html">
-                    <li>Inicio</li>
-                </a>
-                <a href="about.html">
-                    <li>Sobre</li>
-                </a>
-                <a href="technology.html">
-                    <li>Tecnologia</li>
-                </a>
-                <a href="devolopers.html">
-                    <li>Desenvolvedores</li>
-                </a>
-            </ul>
-        </nav>
+      <div class="logo">
+        <img
+          class="map"
+          src="/images/project-logo.png"
+          alt="Truck Route logo"
+        />
+        <h1 class="name">Truck Route</h1>
+      </div>
+      <nav>
+        <ul>
+          <a href="homepage.html">
+            <li>Inicio</li>
+          </a>
+          <a href="about.html">
+            <li>Sobre</li>
+          </a>
+          <a href="technology.html">
+            <li>Tecnologia</li>
+          </a>
+          <a href="devolopers.html">
+            <li>Desenvolvedores</li>
+          </a>
+        </ul>
+      </nav>
     </header>
-</body>
+    <h1>Google Directions</h1>
+    <button id="get-directions">Get Directions</button>
+    <div id="directions-output"></div>
+  </body>
 </html>
